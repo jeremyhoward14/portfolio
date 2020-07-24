@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto&display=swap');
+/* font-family: 'Crete Round', serif;
+font-family: 'Roboto', sans-serif; */
+
 *{
   box-sizing: border-box;
 }
@@ -7,6 +11,19 @@
 body {
   /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Crete Round', serif;
+}
+
+body h1, h2, h3, h4 {
+  font-family: 'Crete Round', serif;
+}
+
+body p, b, strong, a, li {
+  font-family: 'Roboto', sans-serif;
+}
+
+video {
+  max-height: 600px;
 }
 
 a {
@@ -77,6 +94,22 @@ a:hover {
   transform: translate(-50%, -50%);
   text-align: center;
   overflow: visible;
+}
+
+.overlayText a#titleButton {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px;
+  width: auto;
+  text-decoration: none;
+  color: initial;
+}
+
+.overlayText a#titleButton:hover {
+  background-color: lightgrey;
 }
 
 .overlayText h1, h2, h3 {
@@ -193,6 +226,7 @@ nav {
   height: 100vh;
   width: 25vw;
   border-right: 1px solid #000000;
+  z-index: 1000;
 }
 
 nav img {
@@ -215,6 +249,21 @@ nav li {
   margin-left: 25vw;
 }
 
+.appDescription {
+  width: 73vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  /* margin-top: 10vw; */
+  
+  margin-left: 25vw;
+  text-align: center;
+}
+.appDescription h1, h2, h3, a#siteLink {
+  text-align: center;
+}
+a#siteLink {
+  text-align: center;
+}
 @media screen and (max-height:720px) {
   nav img {
     display: none;
@@ -223,14 +272,24 @@ nav li {
 @media screen and (max-width:1024px) {
   nav {
     text-align: center;
-    position: relative;
-    padding: 1vw;
-    margin: 0;
+    position: fixed;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
     top: 0;
-    left: auto;
-    height: 25vh;
-    width: 100vw;
-    border: none;
+    left: 0;
+    height: 35vh;
+    width: 96vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-top: none; 
+    border-right: none;
+    display: block;
+    background-color: white;
+    box-shadow: #dddddd;
   }
 
   nav img {
@@ -241,6 +300,8 @@ nav li {
     align-items: center;
     text-align: center;
     padding: 0;
+    display: block;
+    margin: 0;
   }
   nav li {
     display: inline;
@@ -251,12 +312,25 @@ nav li {
     padding: 1vw;
   }
   .containerWrapper {
+    display: block;
     margin-left: 0vw;
-    margin-top: 25vh;
-    height: auto;
+    margin-top: 40vh;
   }
   .container {
     margin-left: 0;
-    /* margin-top: 25vh; */
   }
+
+  .appDescription {
+    width: 96vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vh;
+    margin-top: 35vh;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+.centerClass {
+  text-align: center;
 }

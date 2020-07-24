@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    nav
+        .heading
+            img(src='images/profile.jpg' alt='profile' width='240px')
+            a(href="/")
+                h1 Jeremy Howard
+            h3 <a href='mailto:jeremyhoward14@gmail.com'>jeremyhoward14@gmail.com</a>
+            p Hi! Welcome to my portfolio page. My name is Jeremy and I'm a final year Computing and Software Systems student at the University of Melbourne. 
+                | Here you can find some demos of projects I've worked on. 
+                | Hover over them to find out more information about the project, as well as the stack used. 
+            p I also developed this website using Express.js, HTML/Pug and CSS, and am hosting it on Heroku.
+        ul
+        li
+            a(href='/') Home
+        li
+            a(href="/about") About
+        li
+            a(href="https://www.linkedin.com/in/jeremy-h-350b70102/") LinkedIn
+        li
+            a(href='https://github.com/jeremyhoward14') GitHub
+    .appDescription
+        h1 Clubify
+        a#siteLink(href="https://witclubify.herokuapp.com") https://witclubify.herokuapp.com
+        h2 App Description
+        p Clubify aims to connect music fans to venues they will love. Using Spotify listening data and Google Maps data, users are able to find venues near them that play their kind of music, within seconds.
+        p I developed this app with 3 other students in 2020, for a semester long project in one of our final year subjects. We thoroughly enjoyed the project and received a high distinction for our efforts.
+        p We plan to continue development of the app to make it available to multiple streaming services, as well create local accounts for the app to develop a social media platform for the sharing of music tastes, and the promotion of nightlife in the user's city.
+        h2 Stack
+        p Front End: Pug (HTML), CSS
+        p Database: MongoDB Atlas
+        p Back End: Express.js
+        h2 Demo
+        video(width='100%', height='auto', muted='', controls='')
+            source(src='/images/clubifyCropNoWatermark.mp4', type='video/mp4')

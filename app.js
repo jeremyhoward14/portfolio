@@ -7,6 +7,9 @@ var pug = require('pug');
 
 var indexRouter = require('./routes/index');
 var aboutRouter = require('./routes/about');
+var clubifyRouter = require('./routes/clubify');
+var artRouter = require('./routes/art');
+
 
 var app = express();
 
@@ -22,6 +25,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
+app.use('/clubify', clubifyRouter);
+app.use('/art', artRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
