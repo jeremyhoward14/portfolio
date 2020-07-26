@@ -18,9 +18,9 @@ block content
       li
           a(href="/about") About
       li
-          a(href="https://www.linkedin.com/in/jeremy-h-350b70102/") LinkedIn
+          a(href="https://www.linkedin.com/in/jeremy-h-350b70102/" target='_blank') LinkedIn
       li
-          a(href='https://github.com/jeremyhoward14') GitHub
+          a(href='https://github.com/jeremyhoward14' target='_blank') GitHub
   .containerWrapper#wrapper
     .container
       video(width='100%', height='auto', autoplay='', loop='', muted='')
@@ -44,6 +44,16 @@ block content
           br
           a(href="https://zm-art.herokuapp.com") https://zm-art.herokuapp.com
           p#overlayDescription I developed a website to increase the marketing and outreach of my friend's art and allow him to sell his artworks online.
+    .container
+      video(width='100%', height='auto', autoplay='', loop='', muted='')
+        source(src='/images/sit.mp4', type='video/mp4')
+      .overlay
+        .overlayText
+          a#titleButton(href='/student_it') Student IT
+          br
+          br
+          a(href="https://studentit.unimelb.edu.au") https://studentit.unimelb.edu.au
+          p#overlayDescription I co-develop this website in my job as a Student IT Intern at the University of Melbourne.
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   script
     include ../public/javascripts/navbar.js

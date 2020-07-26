@@ -9,7 +9,7 @@ var indexRouter = require('./routes/index');
 var aboutRouter = require('./routes/about');
 var clubifyRouter = require('./routes/clubify');
 var artRouter = require('./routes/art');
-
+var sitRouter = require('./routes/sit');
 
 var app = express();
 
@@ -27,6 +27,7 @@ app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/clubify', clubifyRouter);
 app.use('/art', artRouter);
+app.use('/student_it', sitRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -66,14 +66,15 @@ a:hover {
 
 .overlay {
   position: absolute;
-  background: white;
+  background:rgb(0, 0, 0, 0.8);
+  color: white;
   bottom: 0;
   left: 0;
   right: 0;
   overflow: auto;
   width: 100%;
   height: 0;
-  transition: .5s ease;
+  transition: .3s ease;
   /* border: 1px solid #000000; */
 }
 
@@ -86,6 +87,7 @@ a:hover {
 }
 
 .overlayText {
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -101,7 +103,8 @@ a:hover {
   -moz-appearance: button;
   appearance: button;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid white;
+  color: white;
   font-family: 'Crete Round', serif;
   font-size: 1.5em;
   font-weight: bold;
@@ -109,21 +112,21 @@ a:hover {
   width: auto;
   height: auto;
   text-decoration: none;
-  color: initial;
 }
 
 .overlayText a#titleButton:hover {
-  background-color: lightgrey;
+  background-color: black;
 }
 
-.overlayText h1, h2, h3 {
-  color: black;
+.overlayText h1, .overlayText h2, .overlayText h3 {
+  color: white;
 }
-.overlayText p {
-  color: black;
+.overlayText p, .overlayText a {
+  color: white;
 }
 .heading {
   /* margin-left: 25vw; */
+  color: black;
   text-align: center;
 }
 
@@ -231,6 +234,7 @@ nav {
   width: 25vw;
   border-right: 1px solid #000000;
   z-index: 1000;
+  color: black;
 }
 
 nav img {
@@ -342,6 +346,7 @@ a#siteLink {
     width: 96vw;
     padding-left: 2vw;
     padding-right: 2vw;
+    display: none;
   }
 }
 

@@ -1,0 +1,41 @@
+extends layout
+
+block content
+    nav#navbar
+        .heading
+            img(src='images/profile.jpg' alt='profile' width='240px')
+            a(href="/")
+                h1 Jeremy Howard
+            h3 <a href='mailto:jeremyhoward14@gmail.com'>jeremyhoward14@gmail.com</a>
+            .bio
+                p Hi! Welcome to my portfolio page. My name is Jeremy and I'm a final year Computing and Software Systems student at the University of Melbourne. 
+                    | Here you can find some demos of projects I've worked on. 
+                p Hover over the videos (or tap them on mobile), click on the project name and find out more.
+                p I also developed this website using Express.js, HTML/Pug and CSS, and am hosting it on Heroku.
+        ul
+            li
+                a(href='/') Home
+            li
+                a(href="/about") About
+            li
+                a(href="https://www.linkedin.com/in/jeremy-h-350b70102/" target='_blank') LinkedIn
+            li
+                a(href='https://github.com/jeremyhoward14' target='_blank') GitHub
+    .appDescription#wrapper
+        h1 Student IT Website | The University of Melbourne
+        a#siteLink(href="https://studentit.unimelb.edu.au") https://studentit.unimelb.edu.au
+        h2 App Description
+        h3 Context:
+        p In my role as a Student IT Intern at the University of Melbourne, I am a member of the Web Development team. 
+        p We maintain and improve the Student IT website to provide staff and students with online IT assistance.
+        h3 Process and Learning Outcomes:
+        p The site is maintained using Squiz Matrix CMS and I provide updates to information where needed. 
+        p I was able to learn a lot about HTML DOM manipulation with JavaScript by implementing the search function on <a href="https://studentit.unimelb.edu.au/software">our software page.</a>
+        h3 Outcomes:
+        p Our site serves tens of thousands of staff and students every year to help with anything related to University of Melbourne IT.
+        h2 Demos
+        video(width='100%', height='auto', muted='', controls='')
+            source(src='/images/sit.mp4', type='video/mp4')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    script
+        include ../public/javascripts/navbar.js
