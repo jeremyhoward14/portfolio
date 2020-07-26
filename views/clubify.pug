@@ -25,9 +25,34 @@ block content
         h1 Clubify
         a#siteLink(href="https://witclubify.herokuapp.com") https://witclubify.herokuapp.com
         h2 App Description
-        p Clubify aims to connect music fans to venues they will love. Using Spotify listening data and Google Maps data, users are able to find venues near them that play their kind of music, within seconds.
-        p I developed this app with 3 other students in 2020, for a semester long project in one of our final year subjects. We thoroughly enjoyed the project and received a high distinction for our efforts.
-        p We plan to continue development of the app to make it available to multiple streaming services, as well create local accounts for the app to develop a social media platform for the sharing of music tastes, and the promotion of nightlife in the user's city.
+        h3 Context:
+        p Clubify aims to connect music fans to venues they will love. Using personalised Spotify listening data and Google Maps data, users are able to find venues near them that play their kind of music, within seconds. I developed this app with 3 other students in 2020, for a semester long project in one of our final year subjects. We thoroughly enjoyed the project and received a high distinction for our efforts.
+        h3 Process and Learning Outcomes:
+        p I implemented the back-end functionality of our web app. I greatly increased my proficiency of using technologies such as:
+            ol
+                li Node.js + Express.js
+                li MongoDB and Mongoose
+                li Web APIs: Spotify API and Google Maps API
+        h3 Result:
+        p We had the app promoted on social media and received fantastic feedback, growing from 0 to 2700 users in 3 days.
+        p We received an overall mark of 89% for the project.
+        h3 Future Goals:
+        ol
+            li Cost Reduction:
+                ul
+                    li Our app relies heavily on the Google Maps API to generate club and bar suggestions based on a user's music taste. 
+                    li We would like to move to a local database containing this information to reduce reliability and costs associated with using the Google Maps API.
+            li Database Migration:
+                ul
+                    li We plan to move from MongoDB Atlas to AWS DynamoDB or an Azure database to reduce the cost and increase the scalability of the app's data storage.
+            li Local Accounts and Increased Streaming Services:
+                ul 
+                    li We would like to create our own account system using a NoSQL database that users can sign up for and link to streaming accounts like Spotify, Apple Music and Soundcloud.
+                    li This will allow for a social media and sharing platform where users can plan their nights out together and compare music tastes.
+            li Venue Partnerships:
+                ul
+                    li We would like to develop partnerships with different clubs and bars to allow them to promote themselves to users with specific music tastes
+                    li A presence from these venues on Clubify would also increase the use cases of the app, and give users the best experience when planning a night out.
         h2 Stack
         p Front End: Pug (HTML), CSS
         p Database: MongoDB Atlas
