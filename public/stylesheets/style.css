@@ -279,10 +279,10 @@ a#siteLink {
     margin-right: 0;
     top: 0;
     left: 0;
-    height: 35vh;
-    width: 96vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    height: auto;
+    width: 100%;
+    /* padding-left: 2vw;
+    padding-right: 2vw; */
     border-bottom: 1px solid black;
     border-left: none;
     border-top: none; 
@@ -314,7 +314,7 @@ a#siteLink {
   .containerWrapper {
     display: block;
     margin-left: 0vw;
-    margin-top: 40vh;
+    /* //margin-top: auto; */
   }
   .container {
     margin-left: 0;
@@ -324,10 +324,20 @@ a#siteLink {
     width: 96vw;
     padding-left: 2vw;
     padding-right: 2vw;
-    padding-top: 1vh;
-    margin-top: 35vh;
+    /* padding-top: 1vh; */
+    /* margin-top: 35vh; */
     margin-left: 0;
     text-align: center;
+  }
+
+  #overlayDescription {
+    display: none;
+  }
+
+  .bio {
+    width: 96vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
   }
 }
 

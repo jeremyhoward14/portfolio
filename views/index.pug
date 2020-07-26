@@ -1,16 +1,17 @@
 extends layout
 
 block content
-  nav
+  nav#navbar
     .heading
         img(src='images/profile.jpg' alt='profile' width='240px')
         a(href="/")
             h1 Jeremy Howard
         h3 <a href='mailto:jeremyhoward14@gmail.com'>jeremyhoward14@gmail.com</a>
-        p Hi! Welcome to my portfolio page. My name is Jeremy and I'm a final year Computing and Software Systems student at the University of Melbourne. 
-            | Here you can find some demos of projects I've worked on. 
-            | Hover over them to find out more information about the project, as well as the stack used. 
-        p I also developed this website using Express.js, HTML/Pug and CSS, and am hosting it on Heroku.
+        .bio
+          p Hi! Welcome to my portfolio page. My name is Jeremy and I'm a final year Computing and Software Systems student at the University of Melbourne. 
+              | Here you can find some demos of projects I've worked on. 
+              | Hover over them to find out more information about the project, as well as the stack used. 
+          p I also developed this website using Express.js, HTML/Pug and CSS, and am hosting it on Heroku.
     ul
       li
           a(href='/') Home
@@ -20,7 +21,7 @@ block content
           a(href="https://www.linkedin.com/in/jeremy-h-350b70102/") LinkedIn
       li
           a(href='https://github.com/jeremyhoward14') GitHub
-  .containerWrapper
+  .containerWrapper#wrapper
     .container
       video(width='100%', height='auto', autoplay='', loop='', muted='')
         source(src='/images/clubifyCropNoWatermark.mp4', type='video/mp4')
@@ -31,7 +32,7 @@ block content
           br
           br
           a(href="https://witclubify.herokuapp.com") https://witclubify.herokuapp.com
-          p Clubify aims to connect music fans to venues they will love. Using Spotify listening data and Google Maps data, users are able to find venues near them that play their kind of music, within seconds.
+          p#overlayDescription Clubify aims to connect music fans to venues they will love. Using Spotify listening data and Google Maps data, users are able to find venues near them that play their kind of music, within seconds.
     .container
       video(width='100%', height='auto', autoplay='', loop='', muted='')
         source(src='/images/zachp1.mp4', type='video/mp4')
@@ -42,4 +43,7 @@ block content
           br
           br
           a(href="https://zm-art.herokuapp.com") https://zm-art.herokuapp.com
-          p I developed a website to increase the marketing and outreach of my friend's art and allow him to sell his artworks online.
+          p#overlayDescription I developed a website to increase the marketing and outreach of my friend's art and allow him to sell his artworks online.
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  script
+    include ../public/javascripts/navbar.js
