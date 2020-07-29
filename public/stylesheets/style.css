@@ -58,6 +58,11 @@ a:hover {
 
 .container {
   position: relative;
+  
+}
+
+.container video {
+  box-shadow: 0 0 5px 5px #dddddd;
 }
 
 .container:hover .overlay {
@@ -115,7 +120,7 @@ a:hover {
 }
 
 .overlayText a#titleButton:hover {
-  background-color: black;
+  background-color: #e20000;
 }
 
 .overlayText h1, .overlayText h2, .overlayText h3 {
