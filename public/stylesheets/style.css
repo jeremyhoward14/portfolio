@@ -71,8 +71,8 @@ a:hover {
 
 .overlay {
   position: absolute;
-  background:rgb(0, 0, 0, 0.8);
-  color: white;
+  background: white;
+  color:black;
   bottom: 0;
   left: 0;
   right: 0;
@@ -92,7 +92,7 @@ a:hover {
 }
 
 .overlayText {
-  color: white;
+  color: black;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -108,8 +108,8 @@ a:hover {
   -moz-appearance: button;
   appearance: button;
   border-radius: 5px;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid black;
+  color: black;
   font-family: 'Crete Round', serif;
   font-size: 1.5em;
   font-weight: bold;
@@ -124,10 +124,10 @@ a:hover {
 }
 
 .overlayText h1, .overlayText h2, .overlayText h3 {
-  color: white;
+  color: black;
 }
 .overlayText p, .overlayText a {
-  color: white;
+  color: black;
 }
 .heading {
   /* margin-left: 25vw; */
