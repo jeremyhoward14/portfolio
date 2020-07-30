@@ -120,7 +120,7 @@ a:hover {
 }
 
 .overlayText a#titleButton:hover {
-  background-color: #e20000;
+  background-color: #dddddd;
 }
 
 .overlayText h1, .overlayText h2, .overlayText h3 {
